@@ -7,11 +7,15 @@ import styled from "styled-components";
 export default function Default({
   children,
   page,
-  placeholder
+  placeholder,
+  prevPageHandler,
+  nextPageHandler
 }: {
   children: any;
   page: string;
-  placeholder: string
+  placeholder: string,
+  prevPageHandler: any,
+  nextPageHandler: any
 }) {
   const links: Link[] = [
     { name: "People", route: "/people" },
@@ -33,7 +37,7 @@ export default function Default({
         />
         <h1>{page}</h1>
         <div className="cards-container">{children}</div>
-        <Pagination />
+        <Pagination nextPageHandler={nextPageHandler} prevPageHandler={prevPageHandler} />
       </div>
     </DefaultLayout>
   );
@@ -91,10 +95,6 @@ const DefaultLayout = styled.div`
 
       @media (768px <= width) {
         grid-template-columns: repeat(2, 1fr);
-      }
-      
-      @media (1024px <= width) {
-        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

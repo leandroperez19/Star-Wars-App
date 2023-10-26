@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 
-export default function Pagination() {
+export default function Pagination({prevPageHandler, nextPageHandler} : {prevPageHandler: any, nextPageHandler: any}) {
   const { theme } = useTheme();
 
   return (
     <PaginationComponent theme={theme}>
-      <div className="page">
+      <div className="page" onClick={()=> prevPageHandler()}>
         <span className="material-symbols-outlined">navigate_before</span>
       </div>
-      <div className="page">
+      <div className="page" onClick={()=> nextPageHandler()}>
         <span className="material-symbols-outlined">navigate_next</span>
       </div>
     </PaginationComponent>
