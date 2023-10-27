@@ -1,17 +1,28 @@
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Card({
   name,
   cardClass,
+  url,
+  page
 }: {
   name: string;
   cardClass: string | undefined;
+  url: string;
+  page: string;
 }) {
   const { theme } = useTheme();
+  const route: string[] = url ? url.match(/\/(\d+)\/$/) ?? [''] : [''];
+  const navigate = useNavigate();
+
+  const navigateToRoute = () => {
+    navigate(`/${page}/${route[1]}`);
+  }
 
   return (
-    <CardWrapper theme={theme} className={cardClass}>
+    <CardWrapper theme={theme} className={cardClass} onClick={navigateToRoute}>
       {name}
     </CardWrapper>
   );

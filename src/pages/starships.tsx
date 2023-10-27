@@ -33,7 +33,7 @@ export default function Starships() {
   return (
     <Default page="Starships" placeholder="starship" prevPageHandler={prevPageHandler} nextPageHandler={nextPageHandler}>
       {data?.results.map(e =>(
-        <Card name={e.name} cardClass={isFetching ? 'loading' : ''}/>
+        <Card name={e.name} url={e.url} cardClass={isFetching ? 'loading' : ''} page="starships"/>
       ))}
     </Default>
   );
