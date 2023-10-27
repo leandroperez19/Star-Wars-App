@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Star Wars App by Leandro Perez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application built with React and TypeScript that allows you to explore the Star Wars universe. It leverages several libraries and features to provide an engaging user experience, including Axios for API requests, React Query for data management, Styled-Components for styling, and React-Router-DOM for navigation.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+You can access the live demo of the Star Wars App at [Star Wars App Demo](https://star-wars-app-ts.netlify.app/).
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run this project locally, follow these simple steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+`git clone https://github.com/leandroperez19/Star-Wars-App.git`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+`cd Star-Wars-App`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the project dependencies using npm:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
 
-### `npm run eject`
+`npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Your Star Wars App should now be up and running locally. Open a web browser and access it at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Landing Page**:
+- Explore three main categories: People, Starships, and Planets.
+- Navigate between categories to discover characters, starships, and planets in the Star Wars universe.
 
-## Learn More
+- **Category View**:
+- View a list of items (people, starships, or planets) in each category.
+- Utilize the search bar to find specific items within a category.
+- Enjoy pagination for easy navigation through long lists.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Item Details**:
+- Click on an item card to access detailed information about that item.
+- Learn more about your favorite characters, starships, and planets.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
+
+- React: A popular JavaScript library for building user interfaces.
+- TypeScript: A statically typed superset of JavaScript.
+- Axios: A promise-based HTTP client for making API requests.
+- React Query: A data-fetching and state management library for React.
+- Styled-Components: A library for styling React components with CSS-in-JS.
+- React-Router-DOM: A library for handling routing in React applications.
+
+
