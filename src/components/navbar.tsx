@@ -85,7 +85,7 @@ const Nav = styled.div`
   position: relative;
   justify-content: space-between;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 30;
 
   @media (768px <= width) {

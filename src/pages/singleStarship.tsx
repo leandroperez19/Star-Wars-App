@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import SingleItem from "../layouts/singleItem";
 import { useTheme } from "../context/themeContext";
+import Loader from "../components/shared/loader";
 
 export default function SingleStarship() {
   const { id } = useParams();
@@ -17,7 +18,7 @@ export default function SingleStarship() {
   const { theme } = useTheme();
 
   if (!data && isInitialLoading) {
-    return <div>Loading starship...</div>;
+    return <Loader />;
   }
 
   if (isError) {
