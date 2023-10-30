@@ -96,7 +96,7 @@ const Info = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 250px;
+    padding: 0 10px;
     color: ${({ theme }) => theme.font};
   }
 
